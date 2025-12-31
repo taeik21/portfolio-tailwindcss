@@ -1,6 +1,7 @@
 import { About } from '@/components/about';
 import { Header } from '@/components/header';
 import { Info } from '@/components/info';
+import { Project } from '@/components/project';
 import { Skill } from '@/components/skill';
 
 export default function Page() {
@@ -10,6 +11,7 @@ export default function Page() {
       <About />
       <Info />
       <Skill />
+      <Project />
     </>
   );
 }
