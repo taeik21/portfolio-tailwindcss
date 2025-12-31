@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { ModeToggle } from './mode-toggle';
 
 export function Header() {
   const navigation = ['홈', '소개', '기술', '프로젝트', '연락처'];
@@ -22,6 +23,7 @@ export function Header() {
               </li>
             ))}
           </ul>
+          <ModeToggle />
         </div>
       </nav>
     </header>
