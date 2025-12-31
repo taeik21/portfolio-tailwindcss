@@ -17,6 +17,7 @@ export default function Page() {
         <Project />
         <Contact />
       </main>
+      <Footer />
     </>
   );
 }
