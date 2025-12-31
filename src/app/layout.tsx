@@ -17,12 +17,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" suppressHydrationWarning>
+    <html lang="ko" suppressHydrationWarning className="scroll-p-24 scroll-smooth">
       <body className={``}>
         <ThemeProvider
           defaultTheme="system"
-          attribute="class"
           enableSystem
+          attribute="class"
           disableTransitionOnChange
         >
           {children}
