@@ -8,6 +8,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
+import { SubmitButton } from './submit-button';
 
 export function Contact() {
   const info = [
@@ -17,13 +18,11 @@ export function Contact() {
     { name: 'bruce.lean17@gmail.com', icon: faCreativeCommonsBy },
   ];
 
-  const onClickEmail = () => {};
-
   return (
     <section id="연락처" className="mt-16">
       <h2 className="mb-4 text-3xl font-bold">연락처</h2>
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-        <form className="space-y-2">
+        <form className="space-y-2" action={''}>
           <div className="mb-2">
             <label htmlFor="name" className="mb-1">
               이름
@@ -62,13 +61,9 @@ export function Contact() {
             />
           </div>
 
-          <button
-            type="submit"
-            onClick={onClickEmail}
-            className="cursor-pointer rounded-lg bg-blue-600 px-4 py-2 text-white hover:bg-blue-500"
-          >
+          <SubmitButton className="rounded-lg bg-blue-600 px-4 py-2 text-white hover:bg-blue-500">
             이메일 보내기
-          </button>
+          </SubmitButton>
         </form>
 
         <div className="flex flex-col justify-center gap-y-4 text-center text-gray-600 dark:text-gray-300">
